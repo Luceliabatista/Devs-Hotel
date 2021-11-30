@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* font-size: 100%; */
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+nav,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+/*HEADER*/
+header {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+header img {
+  width: 200px;
+}
+header nav {
+  display: flex;
+}
+header li a {
+  color: #191c03;
+}
+header li a:hover {
+  border-bottom: 2px solid #c3c63d;
+}
+.pg-atual {
+  border-bottom: 2px solid #c3c63d;
+  opacity: 1;
+  font-weight: bolder;
+}
+header li {
+  margin: 0 15px;
+}
+header li:first-child {
+  margin-left: 0;
+}
+header li:last-child {
+  margin-right: 0;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    margin-bottom: 15px;
+  }
+}
+
+/*HERO*/
+.hero {
+  color: white;
+  background-image: url(../img/img8.jfif);
+  background-size: cover;
+  background-position-x: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  padding-top: 200px;
+}
+.hero h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.hero .btn {
+  background-color: white;
+  border-radius: 4px;
+  color: #191c03;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+.hero .btn + a {
+  background-color: white;
+  border-radius: 4px;
+  color: #191c03;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/*CONHEÇA O HOTEL*/
+.conheca-o-hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+.conheca-o-hotel h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #191c03;
+}
+.conheca-o-hotel p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #191c03;
+  text-align: center;
+}
+.conheca-o-hotel hr {
+  width: 200px;
+  height: 2px;
+  background-color: #191c03;
+  margin-bottom: 70px;
+  border: none;
+}
+.conheca-o-hotel .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.conheca-o-hotel .grid li {
+  height: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+.conheca-o-hotel .grid li.small {
+  flex-basis: 40%;
+}
+.conheca-o-hotel .grid li.large {
+  flex-basis: 60%;
+}
+.conheca-o-hotel .btn {
+  background-color: #191c03;
+  border-radius: 4px;
+  color: white;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/*SERVIÇOS*/
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #191c03;
+}
+.caracteristicas h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #fff;
+}
+.caracteristicas p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #fff;
+  text-align: center;
+}
+.caracteristicas hr {
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 70px;
+  border: none;
+}
+.caracteristicas .grid {
+  width: 100%;
+  display: flex;
+}
+.caracteristicas .grid li {
+  padding: 0px 30px;
+  text-align: center;
+}
+.caracteristicas .grid li i {
+  color: #c3c63d;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.caracteristicas .grid li h4 {
+  font-size: 1.5rem;
+  color: #c3c63d;
+  margin-bottom: 30px;
+}
+.caracteristicas .grid li p {
+  color: #fff;
+}
+.caracteristicas .btn {
+  background-color: white;
+  border-radius: 4px;
+  color: #191c03;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/*PACOTES E PRODUTOS*/
+.pacotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+.pacotes h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #191c03;
+}
+.pacotes p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #191c03;
+  text-align: center;
+}
+.pacotes hr {
+  width: 200px;
+  height: 2px;
+  background-color: #191c03;
+  margin-bottom: 70px;
+  border: none;
+}
+.pacotes .grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pacotes .grid .promo {
+  padding: 0 30px;
+  text-align: center;
+  width: 100%;
+}
+.pacotes .grid .promo i {
+  color: #191c03;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.pacotes .grid .promo h4 {
+  font-size: 1.5rem;
+  color: #191c03;
+  margin-bottom: 30px;
+}
+.pacotes button {
+  padding: 15px;
+  background-color: #c3c63d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pacotes .btn {
+  background-color: #191c03;
+  border-radius: 4px;
+  color: white;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .pacotes .grid {
+    flex-direction: column;
+  }
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191c03;
+  padding: 50px 50px;
+}
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  height: 75px;
+  /* border: 1px solid blue; */
+}
+footer ul li {
+  margin-right: 15px;
+  width: 75px;
+  /* border: 1px solid red; */
+}
+footer ul li a:hover {
+  font-size: 50px;
+}
+.fa-facebook:hover {
+  color: royalblue;
+  background-color: white;
+  border-radius: 50%;
+}
+.fa-twitter:hover {
+  color: #009ded;
+}
+.fa-snapchat:hover {
+  background-color: #f7f400;
+  color: white;
+  border-radius: 50%;
+}
+.fa-pinterest:hover {
+  color: #bd0001;
+  background-color: white;
+  border-radius: 50%;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer ul li a {
+  color: #c3c63d;
+  font-size: 2rem;
+}
+footer p {
+  text-align: center;
+  color: #c3c63d;
+}

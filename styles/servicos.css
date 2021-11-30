@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* font-size: 100%; */
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+header img {
+  width: 200px;
+}
+
+header nav {
+  display: flex;
+}
+
+header li a {
+  color: #191c03;
+}
+
+header li a:hover {
+  border-bottom: 2px solid #c3c63d;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+header li:first-child {
+  margin-left: 0;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    margin-bottom: 15px;
+  }
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7em;
+}
+
+p {
+  margin: 10px;
+  margin-top: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.paragrafo-1 {
+  font-size: 20px;
+}
+
+.cor-dark {
+  background: #272727;
+  color: #ffffff;
+}
+
+.cor-light {
+  background: white;
+  color: #191716;
+}
+
+.cor-diferente {
+  background: goldenrod;
+  color: #191716;
+}
+
+#container-id {
+  background-image: url("../img/quartohotel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+#container-id .container-content {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#container-id .container-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  color: white;
+}
+
+#container-id .container-content p {
+  padding-bottom: 20px;
+  line-height: 1.2em;
+  color: white;
+}
+
+#secao-1 {
+  height: 450px;
+}
+
+#secao-1 .secao-img {
+  float: left;
+  width: 50%;
+  background-image: url("https://i.pinimg.com/originals/83/6f/0c/836f0cde20fdd80dde6c3b1a5ba94a94.png");
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+#secao-1 .secao-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 60px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+#secao-1 .secao-content p {
+  padding-bottom: 30px;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191c03;
+  padding: 50px 50px;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  height: 75px;
+  /* border: 1px solid blue; */
+}
+
+footer ul li {
+  margin-right: 15px;
+  width: 75px;
+  /* border: 1px solid red; */
+}
+
+footer ul li a:hover {
+  font-size: 50px;
+}
+
+.fa-facebook:hover {
+  color: royalblue;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fa-twitter:hover {
+  color: #009ded;
+}
+
+.fa-snapchat:hover {
+  background-color: #f7f400;
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-pinterest:hover {
+  color: #bd0001;
+  background-color: white;
+  border-radius: 50%;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #c3c63d;
+  font-size: 2rem;
+}
+
+footer p {
+  text-align: center;
+  color: #c3c63d;
+}

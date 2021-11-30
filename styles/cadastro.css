@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* font-size: 100%; */
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+nav,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+/*HEADER*/
+header {
+  background-color: white;
+  width: 100%;
+  /* position: absolute;
+    top: 0;
+    left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+header img {
+  width: 200px;
+}
+header nav {
+  display: flex;
+}
+header li a {
+  color: #191c03;
+}
+header li a:hover {
+  border-bottom: 2px solid #c3c63d;
+}
+.pg-atual {
+  border-bottom: 2px solid #c3c63d;
+  opacity: 1;
+  font-weight: bolder;
+}
+header li {
+  margin: 0 15px;
+}
+header li:first-child {
+  margin-left: 0;
+}
+header li:last-child {
+  margin-right: 0;
+}
+@media (max-width: 750px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    margin-bottom: 15px;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../img/login-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* width: 100vw; */
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.box2 {
+  border: 2px groove #794f37;
+  width: 600px;
+  background-position: cover;
+  background-color: #eae6de;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 80px auto;
+}
+.box2 h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.box2 input {
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 126%;
+}
+.box2 .cpf-cep {
+  width: auto;
+}
+#container-btn { 
+  width: 300px;
+}
+
+.botao {
+  margin-top: 14px;
+  font-weight: bolder;
+  background-color: #03a9f4;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.botao:hover {
+  background-color: #17719b;
+}
+
+@media (max-width: 600px) {
+  .botao {
+    margin-left: 50px;
+  }
+}
