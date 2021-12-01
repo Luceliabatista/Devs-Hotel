@@ -7,7 +7,7 @@
  <br>
  
 <h2>🌴 Sobre</h2>
-<p> A página foi desenvolvida para um hotel (fictício) contruido para desenvolvedores.</p>
+<p> A página foi desenvolvida para um hotel (fictício) construído para desenvolvedores.</p>
 <p>
 Trata-se de um projeto desenvolvido para o encerramento do módulo de HTML e CSS do curso de Desenvolvedor Web Fullstack da <a href="https://soulcodeacademy.org/">SoulCode Academy</a>.
 </p>
